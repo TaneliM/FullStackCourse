@@ -1,0 +1,27 @@
+{
+  "name": "mean-stack",
+  "version": "1.0.0",
+  "description": "MEAN stack app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "*",
+    "mongoose": "*",
+    "passport": "0.4.0",
+    "passport-jwt": "3.0.1"
+  },
+  "author": "Taneli Mykrä",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

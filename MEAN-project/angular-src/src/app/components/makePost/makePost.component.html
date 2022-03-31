@@ -1,0 +1,12 @@
+<h2 class="page-header">Make a new post</h2>
+<form (submit)="onSubmit()">
+  <div class="form-group">
+    <label>title</label>
+    <input type="text" class="form-control" [(ngModel)]="title" name="title">
+  </div>
+  <div class="form-group">
+    <label>Post</label>
+    <textarea type="text" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' class="form-control post-text" [(ngModel)]="post" name="post"></textarea>
+  </div>
+  <input type="submit" class="btn btn-primary" value="Create post">
+</form>

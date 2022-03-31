@@ -1,0 +1,15 @@
+<hr>
+
+<div class="jumbotron text-center ">
+  <h2 class="posts-header">All MEAN posts</h2>
+  <p class="lead">yes, everyone of them.</p>
+</div>
+
+<div class="group">
+  <div class="post" *ngFor="let post of posts">
+    <h3 class="post-title">{{post.title}}</h3>
+    <p class="post-author">by: {{post.username}}</p>
+    <p class="post-text">{{post.post}}</p>
+  </div>
+</div>
+

@@ -1,0 +1,26 @@
+<div class="jumbotron text-center">
+  <h1>MEAN posts</h1>
+  <p class="lead">Welcome to MEAN posts</p>
+  <div>
+    <a *ngIf="!authService.loggedIn()" class="btn btn-primary" [routerLink]="['/register']">Register</a>
+    <a *ngIf="!authService.loggedIn()" class="btn btn-default" [routerLink]="['/login']">Login</a> 
+  </div> 
+</div>
+
+<hr>
+<div class="row">
+  <div class="col-md-4 text-center">
+    <h3>This app uses MEAN</h3>
+    <p>So you don't have to be mean</p>
+  </div>
+  <div class="col-md-4 text-center">
+    <h3>Seriously</h3>
+    <p>don't be mean</p>
+  </div>
+  <div class="col-md-4 text-center">
+    <h3>But go ahead</h3>
+    <p>use MEAN</p>
+  </div>
+</div>
+
+<app-posts></app-posts>
